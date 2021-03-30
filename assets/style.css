@@ -27,6 +27,10 @@ header::after{
 a{
     text-decoration:none;
 }
+.logo h1 a{
+    font-size: 23px;
+    line-height: 1px;
+}
 .logo{
     text-align: center;
     margin-bottom:15px;
@@ -82,7 +86,7 @@ header nav ul li a{
     background-color:#0b0c10d3;
     height:inherit;
 }
-.text-pocetna p , .text-pocetna a, header nav ul li a, .skill-title h5, .status-skills span,.nalsov-services h5,.text-services p,.project-title {
+.text-pocetna p , .text-pocetna a, header nav ul li a, .skill-title h5, .status-skills span,.nalsov-services h5,.button-contact,.text-services p,.project-title {
     font-family: 'Share Tech Mono', monospace;
     color:#c5c6c7;
 }
@@ -162,13 +166,11 @@ header nav ul li a{
 }
 .social-about ul li{
     margin-bottom:30px;
-    background-color: #0b0c10;
-    padding:7px;
     transition:0.5s ease-in-out;
+    padding-left: 10px;
     cursor:pointer;
 }
 .social-about ul li:hover{
-    background-color: #0b0c102d;
     transform: scale(1.1);
 }
 .social-about ul li a i{
@@ -202,7 +204,7 @@ header nav ul li a{
 }
 .cover-gray{
     z-index: 1;
-    background-color:#45a29dd8;
+    background-color:#45a29df1;
 }
 .row-skills{
     width:50%;
@@ -270,10 +272,9 @@ header nav ul li a{
     transition: 0.5s ease-in-out;
 }
 .s-box:hover{
-    transform:scale(1.1);
     -webkit-box-shadow: -1px 0px 26px 10px rgba(102,252,241,1);
--moz-box-shadow: -1px 0px 26px 10px rgba(102,252,241,1);
-box-shadow: -1px 0px 26px 10px rgba(102,252,241,1);
+    -moz-box-shadow: -1px 0px 26px 10px rgba(102,252,241,1);
+    box-shadow: -1px 0px 26px 10px rgba(102,252,241,1);
 }
 /*projects*/
 #projects{
@@ -383,13 +384,60 @@ textarea{
     display: block;
     margin:0 auto;
     cursor:pointer;
-    width:40%;
+    width:35%;
     color:#1f2833;
     background-color: #66fcf1;
-    font-size:15px;
+    font-size:14px;
     transition: 0.5s ease-in;
+    font-weight: 600;
 }
 .button-contact:hover{
     color:#66fcf1;
+    background-color:#1f283300;
+}
+/*footer*/
+footer{
     background-color:#1f2833;
+}
+.logo-footer h1 a{
+    font-size: 30px;
+}
+.footer-container{
+    padding-top: 20px ;
+    justify-content: center;
+    margin:0 auto;
+}
+.icons-footer{
+    width:600px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding: 20px;
+}
+.icons-footer li{
+   list-style-type: none;
+}
+.icons-footer li a{
+    color:#45a29dd8;
+    font-size: 25px;
+    transition: 0.5s ease-in-out;
+ }
+ .icons-footer li a:hover{
+    color:#66fcf1;
+ }
+.icons-f{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer{
+    color:#66fcf1;
+}
+.text-footer p{
+    text-align: center;
+    color:#c5c6c7;
+}
+.icons-footer li a i{
+    font-size: 30px;
 }

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width initial-scale=1.0"/>
+	<link rel="shortcut icon" href="assets/images/icon.ico"/>
     <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script> 
     <link rel="Stylesheet" href="assets/style.css"/>
     <link rel="Stylesheet" href="assets/responsive.css"/>
@@ -13,7 +15,7 @@
         <div class="meni-logo">
             <div class="meni">
                 <nav>
-                    <ul class="d-flex space-around ">
+                    <ul class="nav-meni d-flex space-around ">
                         <li><a href="#">home</a></li>
                         <li><a href="#about">about</a></li>
                         <li><a href="#skills">skills</a></li>
@@ -48,10 +50,10 @@
                         <img src="assets/images/about-page.jpg" alt="Slika Simeuna Radovica"/>
                         <div class="social-about">
                             <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a></li>
                             </ul>
                         </div> 
                     </div>              
@@ -168,10 +170,11 @@
                 </div>
                 <div class="project-box">
                     <img src="assets/images/project2.jpg" alt="project2 image"/>
+                    <a href="https://simeunradovic.github.io/Simeun.portfolio/" target="_blank">
                     <div class="overlay-project">
                         <div class="project-title"><h5>Portfolio</h5></div>
                         <div class="project-description"><p>html,css,javascript</p></div>
-                    </div>
+                    </div></a>
                 </div>
                 <div class="project-box">
                     <img src="assets/images/skills-page.jpg" alt="project image"/>
@@ -197,7 +200,21 @@
         </section>
     </main>
     <footer>
-        <p>&lt; p &gt;All Rights Reserved &copy; Simeun Radović 145/20&lt;&#47; p &gt;</p>
+        <div class="footer-container">
+            <div class="logo logo-footer"><h1><a href="#">&nbsp; &nbsp;<span class="logo-span">&lt;&nbsp;Simeun</span>Radović&nbsp;&#47;&gt;</a></h1>
+            </div>
+            <div class="icons-f">
+                <ul class="icons-footer">
+                    <li><a href="#"><i class="fas fa-sitemap"></i></a></li>
+                    <li><a href="#"><i class="fab fa-sass"></i></a></li>
+                    <li><a href="#"><i class="fab fa-html5"></i></a></li>
+                    <li><a href="#"><i class="far fa-file-code"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-footer">
+            <p>All Rights Reserved &copy; <a href="#"><span class="footer">Simeun Radović</span></a> 145/20 </p>
+        </div>
     </footer>
 </body>
 </html>
