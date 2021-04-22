@@ -58,6 +58,9 @@
     .text-pocetna a {
         font-size:14px;
     }
+    .icons-footer li a{
+        font-size: 15px;
+    }
 }
 @media screen and (max-width:469px){
     .text-pocetna p{
@@ -165,6 +168,9 @@
     .about-text  {
         width:70%;
     }
+    .button-contact{
+        width:38%;
+    }
 }
 /*about*/
 @media screen and (max-width:1077px){
@@ -215,7 +221,6 @@
 @media screen and (max-width:1284px){
     .row-services{
         width:100%;
-        margin-bottom:30px;
     }
     .s-box{
         width:270px;
@@ -267,6 +272,10 @@
     .logo h1 a{
         font-size: 15px;
     }
+    .icons-footer li a{
+        font-size: 13px;
+    }
+}
 }
 @media screen and (max-width:355px){
     .button-contact{

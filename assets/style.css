@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Saira+Semi+Condensed:wght@500&display=swap');
 html{
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -9,6 +7,11 @@ html{
 *{
     margin:0;
     padding:0;
+}
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .about-pocetna,.cover-gray,#services,#projects,#contact{
     padding-top:30px;
@@ -32,11 +35,11 @@ a{
 .logo-span{
     color:#c5c6c7;
 }
-.project-description p,.about-text p,.text-services p,.contact-form-txt::placeholder,.contact-form-txtarea::placeholder{
-    font-family: 'Teko', sans-serif;
+.project-description p,.about-text p,.text-services p,.contact-form-txt::placeholder,.contact-form-txtarea::placeholder,.text-footer p{
+    font-family: 'Montserrat', sans-serif;
 }
 .logo a{
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Saira Semi Condensed', sans-serif;
     font-size: 20px;
     color:#66fcf1;
 }
@@ -62,11 +65,13 @@ a{
 .links-meni ul li{
     padding-top:20px;
 }
-.links-meni ul li a:hover{
-    color:#66fcf1;
+.links-meni ul li a:hover,.icons-footer li a{
+    background: linear-gradient(#ffffff,#45a29e);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 .links-meni ul li a{
-    transition: 0.5s ease-in-out;
+    transition: 1s linear;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 400;
@@ -77,20 +82,19 @@ a{
     background-image:url(images/1.jpg);
     width:100%;
     height:100vh;
+    background-color:#1f2833d5;
 }
-.block-center{
-    justify-content: center;
-    align-items: center;
+.cover-pozadina{
+    background-color:#1f2833c7;
+    width:inherit;
+    height:inherit;
 }
 .align-items-center{
     align-items: center;
 }
-.cover-pozadina{
-    background-color:#0b0c10d3;
-    height:inherit;
-}
-.text-pocetna p , .text-pocetna a, header nav ul li a, .skill-title h5, .status-skills span,.nalsov-services h5,.button-contact,.project-title {
-    font-family: 'Share Tech Mono', monospace;
+
+.text-pocetna p , .text-pocetna a, header nav ul li a, .skill-title h5, .status-skills span,.nalsov-services h5,.button-contact,.project-title,.icons-footer li a {
+    font-family: 'Montserrat', sans-serif;
     color:#c5c6c7;
 }
 .text-pocetna p {
@@ -99,7 +103,9 @@ a{
 }
 .text-pocetna span {
     font-size: 45px;
-    color:#45a29e;
+    background: linear-gradient(#ffffff,#45a29e);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 .text-pocetna a,.button-about a{
    padding:5px 10px;
@@ -119,7 +125,7 @@ a{
     background-color:#1f2833 ;
  }
  .naslov{
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Saira Semi Condensed', sans-serif;
     margin-bottom: 50px;
     font-size:34px;
     text-align: center;
@@ -136,7 +142,7 @@ a{
     height:4px;
     background-color:#66fcf1;
 }
-.about-image img,.about-text,.social-about ul li{
+.about-image img,.about-text{
     border-left:2px solid #66fcf1;
 }
 #about,#projects,.cover-gray,#services,#contact{
@@ -144,9 +150,6 @@ a{
 }
 .about-image{
     width:320px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .about-image img{
     width:79%;
@@ -169,15 +172,17 @@ a{
 }
 .social-about ul li{
     margin-bottom:30px;
-    transition:0.5s ease-in-out;
-    padding-left: 10px;
+    background-color:#66fcf1;
     cursor:pointer;
-}
-.social-about ul li:hover{
-    transform: scale(1.1);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .social-about ul li a i{
-    color:#66fcf1;
+    color:#1f2833;
     font-size: 20px;
 }
 .about-container{
@@ -202,7 +207,7 @@ a{
      width: 17%;
  }
  .skill-icon i{
-    font-size: 35px;
+    font-size: 30px;
     color:#66fcf1;
 }
 .cover-gray{
@@ -229,11 +234,7 @@ a{
     height:250px;
     padding:10px;
     cursor: pointer;
-    clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0 100%, 0% 20%);
     transition: 0.7s ease-in-out all;
-}
-.skill-box:hover{
-    transform: scale(1.1);
 }
 .skill-title h5,.nalsov-services h5{
     font-weight:800;
@@ -241,7 +242,7 @@ a{
     margin-bottom:70px;
     font-size:18px;
     text-align: center;
-    color:#45a29e;
+    color:#45a29d;
 }
 .icon{
     width:40%;
@@ -269,15 +270,18 @@ a{
 }
 .s-box{
     cursor: pointer;
-    background-color:#1f2833cc;
+    background-color:#1f2833dc;
     padding:30px;
     width:250px;
     transition: 0.5s ease-in-out;
+    box-shadow: -1px 14px 8px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 14px 8px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 14px 8px -2px rgba(0,0,0,0.75);
 }
 .s-box:hover{
-    -webkit-box-shadow: -1px 0px 26px 10px rgba(102,252,241,1);
-    -moz-box-shadow: -1px 0px 26px 10px rgba(102,252,241,1);
-    box-shadow: -1px 0px 26px 10px rgba(102,252,241,1);
+    box-shadow: -1px 14px 8px -2px rgba(102,252,241,0.75);
+-webkit-box-shadow: -1px 14px 8px -2px rgba(102,252,241,0.75);
+-moz-box-shadow: -1px 14px 8px -2px rgba(102,252,241,0.75);
 }
 .text-services p{
     font-size: 18px;
@@ -298,6 +302,7 @@ a{
 }
 .project-box img{
     width:100%;
+    filter: grayscale(90%);
 }
 .overlay-project{
     position: absolute;
@@ -307,10 +312,7 @@ a{
     height:100%;
     background-color: #45a29dd8;
     color:white;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     opacity: 0;
     transition: opacity 0.70s;
     cursor: pointer;
@@ -346,16 +348,9 @@ textarea{
 .contact-in{
     margin:0 auto;
     width:50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .contact-form{
-    
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     width:100%;
     padding:30px;
 }
@@ -404,7 +399,6 @@ footer{
     background-color:#1f2833;
 }
 .logo-center{
-    display: flex;
     justify-content: center;
 }
 .logo-footer {
@@ -421,7 +415,6 @@ footer{
 }
 .icons-footer{
     width:600px;
-    display: flex;
     align-items: center;
     justify-content:space-around;
     padding: 20px;
@@ -431,17 +424,11 @@ footer{
 }
 .icons-footer li a{
     color:#45a29dd8;
-    font-size: 25px;
+    font-size: 20px;
     transition: 0.5s ease-in-out;
- }
- .icons-footer li a:hover{
-    color:#66fcf1;
  }
 .icons-f{
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .footer{
     color:#66fcf1;

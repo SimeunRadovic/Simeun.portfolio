@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="viewport" content="width=device-width initial-scale=1.0"/>
-	<link rel="shortcut icon" href="assets/images/mail.ico"/>
+	<link rel="shortcut icon" href="assets/images/icon.ico"/>
     <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script> 
-    <link rel="Stylesheet" href="assets/mini.css"/>
+    <link rel="Stylesheet" href="assets/style.css"/>
     <link rel="Stylesheet" href="assets/responsive.css"/>
     <title>Portfolio</title>
 </head>
@@ -28,8 +28,8 @@
         <div class="cleaner"></div>
     </header>
     <main>
-        <section id="pocetna" class="bg-pocetna  block-center">
-            <div class="cover-pozadina d-flex block-center">
+        <section id="pocetna" class="bg-pocetna  flex-center">
+            <div class="cover-pozadina flex-center">
                 <div class="text-pocetna ">
                     <p>Hi,</br>
                     i'm <span>Simeun Radović</span>, </br>web <span>&lt;</span> developer <span>&#47;&gt;</span></p>
@@ -43,10 +43,10 @@
                     <h4>About</h4>
                 </div>
                 <div class="about-container d-flex">
-                    <div class="about-image">
+                    <div class="about-image flex-center">
                         <img src="assets/images/about-page.jpg" alt="Slika Simeuna Radovica"/>
                         <div class="social-about">
-                            <ul>
+                            <ul class="flex-center">
                                 <li><a href="https://www.facebook.com/sima.radic" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                                 <li><a href="https://www.instagram.com/simaradovic/" target="_blank"><i class="fab fa-instagram"></i></a></li>
                                 <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
@@ -123,7 +123,7 @@
                             <p>I'm passionate about making beautiful and functional websites for every client. My specialty is on working with you to develop a website strategy so that your website not only looks great, but works great too.</p>
                         </div>
                     </div>
-                    <div class="s-box">
+                    <div class="s-box s-ux">
                         <div class="nalsov-services">
                             <h5>SEO optimization</h5>
                         </div>
@@ -134,7 +134,7 @@
                     </div>
                 </div>
                 <div class="row-services d-flex">
-                    <div class="s-box">
+                    <div class="s-box s-ux">
                         <div class="nalsov-services">
                             <h5>UI/UX</h5>
                         </div>
@@ -159,23 +159,24 @@
             <div class="naslov"><h4>projects</h4></div>
             <div class="project-container d-flex">
                 <div class="project-box">
-                    <img src="assets/images/project1.jpg" alt="project image"/>
-                    <a href="https://simeunradovic.github.io/forex.signali/index.html" target="_blank"><div class="overlay-project">
+                    <img src="assets/images/project1.jpg" alt="project forex image"/>
+                    <a href="https://simeunradovic.github.io/forex.signali/index.html" target="_blank">
+                        <div class="overlay-project flex-center">
                         <div class="project-title"><h5>Forex</h5></div>
                         <div class="project-description"><p>html,css</p></div>
                     </div></a>
                 </div>
                 <div class="project-box">
-                    <img src="assets/images/project2.jpg" alt="project2 image"/>
+                    <img src="assets/images/project2.jpg" alt="project portfolio image"/>
                     <a href="https://simeunradovic.github.io/Simeun.portfolio/" target="_blank">
-                    <div class="overlay-project">
+                    <div class="overlay-project flex-center">
                         <div class="project-title"><h5>Portfolio</h5></div>
                         <div class="project-description"><p>html,css,javascript</p></div>
                     </div></a>
                 </div>
                 <div class="project-box">
-                    <img src="assets/images/skills-page.jpg" alt="project image"/>
-                    <div class="overlay-project">
+                    <img src="assets/images/skills-page.jpg" alt="project soon image"/>
+                    <div class="overlay-project flex-center">
                         <div class="project-title"><h5>Soon...</h5></div>
                         <div class="project-description"><p>html,css,bootstrap,javascript</p></div>
                     </div>
@@ -184,8 +185,8 @@
         </section>
         <section id="contact">
             <div class="naslov"><h4>contact</h4></div>
-            <div class="contact-in">
-                <div class="contact-form">
+            <div class="contact-in flex-center">
+                <div class="contact-form flex-center">
                     <form>
                         <input type="text" placeholder="Name" class="contact-form-txt"/>
                         <input type="email" placeholder="E-mail" class="contact-form-txt"/>
@@ -198,15 +199,15 @@
     </main>
     <footer>
         <div class="footer-container">
-            <div class="logo-center">
+            <div class="logo-center d-flex">
                 <div class="logo logo-footer"><a href="#"><h1>&nbsp; &nbsp;<span class="logo-span">&lt;&nbsp;Simeun</span>Radović&nbsp;&#47;&gt;</h1></a>
                 </div>
             </div>
-            <div class="icons-f">
-                <ul class="icons-footer">
-                    <li><a href="assets/sitemap.xml"><i class="fas fa-sitemap"></i></a></li>
-                    <li><a href="assets/style.sass"><i class="fab fa-sass"></i></a></li>
-                    <li><a href="assets/style.css"><i class="far fa-file-code"></i></a></li>
+            <div class="icons-f flex-center">
+                <ul class="icons-footer d-flex">
+                    <li><a href="assets/sitemap.xml">Sitemap</a></li>
+                    <li><a href="assets/style.sass">Original css</a></li>
+                    <li><a href="assets/style.css">Original sass</a></li>
                 </ul>
             </div>
         </div>
